@@ -1,0 +1,39 @@
+{
+  // 文件关联
+  "files.associations": {
+    "pages.json": "jsonc",
+    "manifest.json": "jsonc"
+  },
+  "editor.tabSize": 2,
+  "i18n-ally.localesPaths": [
+    "/locale",
+  ],
+  "i18n-ally.keystyle": "nested",
+  "vue.autoInsert.dotValue": true,
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 12,
+  "editor.renderWhitespace": "selection",
+  "editor.cursorStyle": "block",
+  "editor.formatOnPaste": true,
+  "editor.minimap.maxColumn": 60,
+  "editor.minimap.enabled": true,
+  "editor.minimap.scale": 1,
+  "editor.minimap.renderCharacters": true,
+  "editor.minimap.autohide": false,
+  "workbench.activityBar.iconClickBehavior": "toggle",
+  "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {
+
+  },
+  "workbench.editor.autoLockGroups": {
+    "gitlens.rebase": true
+  },
+  "window.autoDetectColorScheme": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "terminal.integrated.cursorBlinking": true,
+  "task.verboseLogging": false,
+  "vsicons.presets.hideFolders": false,
+  "vsicons.presets.foldersAllDefaultIcon": false,
+  "editor.formatOnSave": true,
+}

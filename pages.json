@@ -1,0 +1,42 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/dataStatistics/index"
+		},
+		{
+			"path": "pages/dataStatistics/manageData/index"
+		},
+		{
+			"path": "pages/dataStatistics/manageChef/index"
+		},
+		{
+			"path": "pages/dataStatistics/manageDishes/index"
+		},
+		{
+			"path": "pages/dataStatistics/manageDishes/info"
+		},
+		{
+			"path": "pages/individualityOrder/index"
+		},
+		{
+			"path": "pages/commentFeature/index"
+		},
+		{
+			"path": "pages/commentToday/index"
+		},
+		{
+			"path": "pages/test/index"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "transparent",
+		"backgroundColor": "transparent",
+		"navigationStyle": "custom"
+	},
+	"uniIdRouter": {}
+}

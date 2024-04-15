@@ -1,0 +1,58 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.json",
+	"compilerOptions":{
+		"sourceMap": true,
+		"baseUrl": ".", //用于解析非绝对模块名的基本目录，相对模块不受影响。
+		"paths": {
+			"@/*": [
+				"./*"
+			]
+		}, //用于设置模块名称基于baseUrl的路径映射关系。
+		"lib": [
+			"esnext",
+			"dom"
+		], // TS需要引用的库
+		"types": [
+			// "@types/node",
+			"@dcloudio/types", // uni-app API 类型
+			"@dcloudio/types/uni-app"
+			// "@types/uni-app",
+			// "miniprogram-api-typings", // 原生微信小程序类型
+			// "@types/wechat-miniprogram", // 针对微信小程序的声明类型文件提示
+			// "@uni-helper/uni-app-types", // uni-app 组件类型
+			// "@uni-helper/uni-ui-types" // uni-ui 组件类型
+		], // 用来指定需要包含的模块，并将其包含在全局范围内。
+		"target": "esnext", // 目标语言的版本
+		"useUnknownInCatchVariables": true,
+		"module": "esnext", // 生成代码的模板标准
+		"strict": true, // 开启所有严格的类型检查
+		"noImplicitAny": false, // 不允许隐式的any类型
+		"resolveJsonModule": true, //是否解析 JSON 模块
+		"useDefineForClassFields": true, // 此标志用作迁移到即将推出的类字段标准版本的一部分，默认：false
+		"skipLibCheck": true, //是否跳过声明文件的类型检查，这可以在编译期间以牺牲类型系统准确性为代价来节省时间，默认：false。
+		// 模块解析选项
+		"moduleResolution": "node", // 指定模块解析策略，node或classic
+		"esModuleInterop": true, // 允许export=导出，由import from 导入 //是否通过为所有导入模块创建命名空间对象，允许CommonJS和ES模块之间的互操作性，开启改选项时，也自动开启allowSyntheticDefaultImports选项，默认：false。
+		"allowSyntheticDefaultImports": true, // 是否允许从没有默认导出的模块中默认导入，默认：false。
+		// 项目选项
+		"importHelpers": true, // 是否将辅助函数从 tslib 模块导入，默认：false。
+		"jsx": "preserve", // 指定JSX代码生成用于的开发环境。
+	},
+	"vueCompilerOptions": {
+    "nativeTags": ["block", "component", "template", "slot"],
+		"target": 2.7,
+  },
+	// 指定被编译文件所在的目录
+	"include": [
+		"./**/*.ts",
+		"./**/*.d.ts",
+		"./**/*.tsx",
+		"./**/*.vue",
+	],
+	// 指定不需要被编译的目录
+	"exclude": [
+		"node_modules",
+		"unpackage",
+		"src/**/*.nvue",
+	]
+}

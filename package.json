@@ -1,0 +1,13 @@
+{
+	"devDependencies": {
+		"@dcloudio/types": "^3.4.8",
+		"@iconify-json/carbon": "^1.1.31",
+		"@uni-helper/unocss-preset-uni": "^0.2.7",
+		"@vue/tsconfig": "^0.5.1",
+		"unocss": "^0.58.5",
+		"unplugin-auto-import": "^0.17.5"
+	},
+	"dependencies": {
+		"vue": "3.3.11"
+	}
+}
