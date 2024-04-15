@@ -22,10 +22,8 @@
   "editor.minimap.renderCharacters": true,
   "editor.minimap.autohide": false,
   "workbench.activityBar.iconClickBehavior": "toggle",
-  "workbench.activityBar.location": "top",
-  "workbench.colorCustomizations": {
-
-  },
+  "workbench.activityBar.location": "default",
+  "workbench.colorCustomizations": {},
   "workbench.editor.autoLockGroups": {
     "gitlens.rebase": true
   },
@@ -36,4 +34,6 @@
   "vsicons.presets.hideFolders": false,
   "vsicons.presets.foldersAllDefaultIcon": false,
   "editor.formatOnSave": true,
+  // easysass 插件保存不需要格式化
+  "easysass.compileAfterSave": false,
 }

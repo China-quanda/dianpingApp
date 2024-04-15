@@ -105,7 +105,7 @@ const initTimeFrame = () => {
 		}
 	];
 	list.forEach((timeFrameItem) => {
-		sqlite.insertTableData('dp_timeFrame', `'${timeFrameItem.name}','${timeFrameItem.updateTime}'`, `'name'`);
+		sqlite.insertTableData('dp_timeFrame', `'${timeFrameItem.name}'`, `'name'`);
 	});
 };
 // 初始化 菜品类别
